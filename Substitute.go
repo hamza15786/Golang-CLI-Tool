@@ -66,7 +66,7 @@ func main() {
 	req, _ := http.NewRequest("GET", url, nil)
 
 	req.Header.Add("accept", "application/json")
-	req.Header.Add("authorization", "Basic ZHAuc3QuZGV2LjNHUWlyZ1h0RGI5aFd6ZndWOXpuRWJoc1BRa0pyUUFLbWVKRE91Mm9ISFc6") // fetching secrets directly from Doppler API using Service Token
+	//req.Header.Add("authorization", "Basic ") // (ADD SERVICE TOKEN) fetching secrets directly from Doppler API using Service Token
 
 	res, _ := http.DefaultClient.Do(req)
 
